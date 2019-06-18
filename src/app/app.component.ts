@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+
 
 @Component({
   selector: 'app-root',
@@ -6,20 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  posts = [
-    {
-      title: 'Mon premier post',
-      content: 'Lorem ipsum dolor sit amet',
-      loveIts: 0,
-      created_at: new Date()
-    },
-    {title: 'Mon deuxième post',
-    content: 'Lorem ipsum dolor sit amet',
-    loveIts: 0,
-    created_at: new Date()},
-    {title: 'Encore un post',
-    content: 'Lorem ipsum dolor sit amet',
-    loveIts: 0,
-    created_at: new Date()}
-  ];
+  constructor() {}
 }

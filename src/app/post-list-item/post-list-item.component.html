@@ -4,10 +4,18 @@
   <p class="text-right">{{postCreated_at | date: 'M/d/yyyy, h:mm a'}}</p>
   <h2><strong>{{postTitle}}</strong></h2>
   <p>{{postContent}}</p>
-  <div class="btn-toolbar">
-    <button class="btn btn-success"
-            (click)="onIncrease()">Love it !</button>
-    <button class="btn btn-danger"
-            (click)="onDecrease()">Don't love it!</button>
-  </div>
+
+
+    <div class="btn-toolbar">
+      <button class="btn btn-success"
+              (click)="onIncrease()">Love it !
+      </button>
+      <button class="btn btn-danger"
+              (click)="onDecrease()">Don't love it!
+      </button>
+      <button class="btn btn-danger navbar-right" (click)="onDelete()"> Supprimer post</button>
+    </div>
+
+
+
 </li>
